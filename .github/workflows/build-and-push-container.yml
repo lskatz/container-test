@@ -46,4 +46,4 @@ jobs:
           cache-to:   type=registry,ref=lskatz/container-test
           tags:  |
             lskatz/container-test:latest
-            'lskatz/container-test:${{ GITHUB_SHA }}'
+            'lskatz/container-test:$GITHUB_SHA'
