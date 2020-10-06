@@ -13,3 +13,7 @@ Test building containers
     * Save CR_PAT into secrets with the key as `CR_PAT`
     * Save your DockerHub password into `DOCKER_PASSWORD`
 5. Watch the magic in GitHub actions in your forked repo
+6. Get your containers back under github and dockerhub, e.g.,
+    * https://github.com/lskatz?tab=packages
+    * https://hub.docker.com/layers/lskatz/container-test
+    
