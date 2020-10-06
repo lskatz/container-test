@@ -14,7 +14,6 @@ env:
   DOCKER_USERNAME:   lskatz
   CI_PROJECT_NAME:   container-test
   github_repository: lskatz/container-test
-  slug: "${{github_repository}}:latest"
 
 jobs:
   push_to_registry:
@@ -47,4 +46,4 @@ jobs:
           cache-to:   type=registry,ref=lskatz/container-test
           tags:  |
             lskatz/container-test:latest
-            'lskatz/container-test:${{ env.GITHUB_SHA }}'
+            'lskatz/container-test:${{ GITHUB_SHA }}'
