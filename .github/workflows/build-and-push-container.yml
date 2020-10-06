@@ -28,7 +28,7 @@ jobs:
       - name: Prepare env
         id:   prep
         run: |
-          DOCKER_IMAGE=${{ github_repository }}
+          DOCKER_IMAGE=${{ env.github_repository }}
           TAGS="${DOCKER_IMAGE}:latest,${DOCKER_IMAGE}:blah"
           echo ::set-output name=tags::${TAGS}
       - name: Login to DockerHub
