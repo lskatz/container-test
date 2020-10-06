@@ -29,7 +29,7 @@ jobs:
         id:   prep
         run: |
           DOCKER_IMAGE=${{ env.github_repository }}
-          TAGS="${DOCKER_IMAGE}:latest,${DOCKER_IMAGE}:blah"
+          TAGS="${DOCKER_IMAGE}:latest,${DOCKER_IMAGE}:${GITHUB_SHA}"
           echo ::set-output name=tags::${TAGS}
       - name: Login to DockerHub
         uses: docker/login-action@v1
