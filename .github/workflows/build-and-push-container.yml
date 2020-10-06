@@ -38,4 +38,5 @@ jobs:
           push: true
           cache-from: type=registry,ref=lskatz/container-test
           cache-to:   type=registry,ref=lskatz/container-test
-          tags:  lskatz/container-test:latest
+          tags:  |
+            lskatz/container-test:latest
