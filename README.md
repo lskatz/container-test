@@ -17,3 +17,10 @@ Test building containers
     * https://github.com/lskatz?tab=packages
     * https://hub.docker.com/layers/lskatz/container-test
     
+## How it works
+
+Any yml file in `.github/workflows` is activated in GitHub actions.
+See GitHub help in how GitHub actions work in general.
+
+See docker/build-push-action for more information on this specific workflow.
+https://github.com/docker/build-push-action
