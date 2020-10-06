@@ -39,4 +39,4 @@ jobs:
       -
         name: Push image with containerd
         run: |
-          sudo ctr i push --user "${{ secrets.DOCKER_USERNAME }}:${{ secrets.DOCKER_PASSWORD }}" docker.io/crazymax/diun:latest
+          sudo ctr i push --debug --user "${{ secrets.DOCKER_USERNAME }}:${{ secrets.DOCKER_PASSWORD }}" docker.io/crazymax/diun:latest
