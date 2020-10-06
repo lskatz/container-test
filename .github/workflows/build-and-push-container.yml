@@ -40,4 +40,4 @@ jobs:
           cache-to:   type=registry,ref=lskatz/container-test
           tags:  |
             lskatz/container-test:latest
-            lskatz/container-test:latest.old
+            'lskatz/container-test:${{ env.GITHUB_SHA }}'
